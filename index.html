@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/de820b69c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Scrypt Challenge</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/de820b69c2.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <title> Scrypt Challenge</title>
-  <link rel="stylesheet" href="./CSS/style.css">
-</head>
+  <body>
+    <div class="scrypt_main">
 
-<body>
+      <div class="scrypt_paint">
 
-  <div class="scrypt_main">
-
-     <div class="scrypt_paint">
-        <h1 class="scrypt_logo">Alura </h1>
+        <h1 class="scrypt_logo">Alura</h1>
         <div class="scrypt_min">
 
           <div class="scrypt_input">
             <div class="scrypt_text">
-                <input id="message" class="message" placeholder="ingrese el texto aqui" autocomplete="off">
-              </div>
-          </div>
-          <div class="scrypt_key">
-            <input type="text" id="key" placeholder="ingrese la key aqui" autocomplete="off">
-            <div class="buttons">
-                <button id="enc-btn" class="button">Encrypt</button>
-                <button id="dec-btn" class="button-active">Decrypt</button>
+              <input
+                id="message"
+                class="message"
+                placeholder="ingrese el texto aqui"
+                autocomplete="off"
+              />
             </div>
           </div>
-          
+          <div class="scrypt_key">
+            <input
+              type="text"
+              id="key"
+              placeholder="ingrese la key aqui"
+              autocomplete="off"
+            />
+            <div class="buttons">
+              <button id="enc-btn" class="button">Encrypt</button>
+              <button id="dec-btn" class="button-active">Decrypt</button>
+            </div>
+          </div>
         </div>
-     </div>
-      <div class="scrypt_view">
-       <div class="scrypt">
-        <img src="assets/list.svg" alt="img-list">
-        <h2 class="scrypt_result">Resultado:</h2>
-        <div id="result" class="result">Sin mensaje</div>
-       </div>
+
       </div>
 
-  </div>
+      <div class="scrypt_view">
+        <div class="scrypt">
+          <img src="assets/list.svg" alt="img-list" />
+          <h2 class="scrypt_result">Resultado:</h2>
+          <div id="result" class="result">Sin mensaje</div>
+        </div>
+      </div>
 
-
-
-
-</body>
-<script src="JS/logout.js"></script>
-<script src="JS/main.js"></script>
-
+    </div>
+  </body>
+  <script src="JS/logout.js"></script>
+  <script src="JS/main.js"></script>
 </html>
