@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Templates*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(177, 156, 156);
+}
+
+/*main page*/
+.scrypt_main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-color: #001044;
+}
+
+.scrypt_min {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+/*logo title*/
+.scrypt_logo {
+  color: rgb(253, 253, 253);
+  font-size: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.scrypt_paint {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100vh;
+}
+
+.scrypt_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrypt_text input {
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 10px 10px 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.scrypt_key {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrypt_key input {
+  width: 95%;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(1, 94, 233);
+  font-size: 20px;
+  margin: 10px 10px 20px 20px;
+  font-weight: bold;
+}
+
+/*buttons*/
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons .button {
+  height: 40px;
+  width: 300px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 116);
+}
+
+.button-active {
+  height: 40px;
+  width: 300px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(187, 185, 185);
+  color: rgb(6, 36, 90);
+}
+
+/*Scrypt viewport*/
+.scrypt_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.scrypt img {
+  width: 200px;
+  height: 200px;
+}
+
+.scrypt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 90vh;
+  flex-direction: column;
+  background-color: rgb(115, 115, 153);
+  color: white;
+  border-radius: 30px;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+/*----------------------------------------------------------------Versión Tablets--------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  /*scrypt main adaptable*/
+  .scrypt_paint {
+    width: 100%;
+    height: 65vh;
+  }
+  
+  .scrypt_min {
+    height: 65vh;
+  }
+
+  .scrypt_text input {
+    width: 100%;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*Scrypt viewport*/
+  .scrypt_view {
+    width: 100%;
+  }
+  
+  .scrypt_key input {
+    width: 95%;
+    margin: 0px 0px 20px 10px;
+  }
+
+  /*buttons scrypt*/
+  .buttons .button {
+    height: 40px;
+    width: 350px;
+    margin-left: 0;
+  }
+
+  .button-active {
+    height: 40px;
+    width: 350px;
+  }
+
+  /*Scrypt result*/
+  .scrypt img {
+    margin-bottom: 10px;
+  }
+
+  .scrypt {
+    width: 95%;
+    height: 30vh;
+    background-color: rgb(115, 115, 153);
+  }
+
+  .result {
+    height: 40px;
+  }
+
+}
+
+/*----------------------------------------------------------Version Mobile------------------------------------------------*/
+@media screen and (max-width: 760px) {
+  /*scrypt main adaptable*/
+  .scrypt_paint {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .scrypt_min {
+    height: 65vh;
+  }
+
+  .scrypt_text input {
+    width: 100%;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*buttons scrypt*/
+  .buttons .button {
+    height: 40px;
+    width: 160px;
+  }
+
+  .button-active {
+    height: 40px;
+    width: 160px;
+  }
+
+  /*Scrypt viewport*/
+  .scrypt_view {
+    width: 100%;
+  }
+
+  .scrypt_key input {
+    width: 95%;
+    margin: 0px 0px 20px 10px;
+  }
+
+  /*Scrypt result*/
+  .scrypt img {
+    margin-bottom: 10px;
+  }
+
+  .scrypt {
+    width: 95%;
+    height: 30vh;
+  }
+
+  .result {
+    height: 40px;
+  }
+
+}
+
+/*-------------------------------------------------------------mini telephone adaptable---------------------------------------------------*/
+@media screen and (max-width: 300px) {
+  /*dism font size inputs and buttons*/
+  .scrypt_text input {
+    font-size: 18px;
+  }
+
+  .scrypt_key input {
+    font-size: 16px;
+  }
+
+  /*Scrypt result font size and width*/
+  .scrypt img {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+
+  .buttons .button {
+    width: 120px;
+    margin-left: 0px;
+  }
+
+  .button-active {
+    width: 120px;
+  }
+
+  .result {
+    font-size: 15px;
+    color: white;
+    height: 40px;
+  }
+
+  .scrypt_result {
+    font-size: 20px;
+  }
+  
+}
